@@ -1,2 +1,5 @@
-var hello = "hello";
-console.log(`${hello} world`);
+var swiper = new Swiper('.swiper-container', {
+    pagination: {
+      el: '.swiper-pagination',
+    },
+  });

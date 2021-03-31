@@ -1,2 +1,29 @@
-body{background-color: yellow;
+.wrapper{
+    max-width: 60%;
+    margin: 0 auto;
+}
+
+a, button{
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+span{
+    font-family: 'Courgette', cursive;
+}
+
+h1,h2,h3{
+    font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
+}
+
+.white{
+    color: white;
+}
+
+button{
+    outline: none!important;
+    border: none;
+    background: transparent;
 }

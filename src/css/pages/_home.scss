@@ -1,0 +1,18 @@
+.welcome{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    background: url(../img/icons/pattern1.png);
+    .welcome-txt{
+        width: 60%;
+    }
+    .welcome-img{
+        width: 40%;
+        
+        img{
+            width: 400px;
+            max-width: 100%;
+            border-radius: 10px;
+        }
+    }
+}

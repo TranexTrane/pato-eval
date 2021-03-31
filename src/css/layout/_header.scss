@@ -1,0 +1,56 @@
+.header{
+height: 100vh;
+}
+
+.main-nav{
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+    padding-top: 50px;
+    border-top: 5px solid red;
+    .wrapper{
+        display: flex;
+        justify-content: space-between;
+    }
+    a{
+        color:white;
+        transition: all ease-in-out 0.5s;
+        font-size: 14px;
+        &:hover{
+            color:red;
+        }
+    }
+    .menu{
+        display: flex;
+        justify-content: space-between;
+        width: 50%;
+    }
+    .reseau{
+        display: flex;
+        justify-content: space-between;
+        width: 10%;
+        .btn-burger{
+        height: 15px;
+        width: 25px;
+        border-top: 2px solid white;
+        border-bottom: 2px solid white;
+        cursor: pointer;
+        margin-left: 10px;
+        }
+    } 
+}
+
+.logo{
+    position: relative;
+    height: 50px;
+    a{  
+        display: block;
+        height: 100%;
+    }
+    img{
+        width: auto;
+        max-height: 100%;
+        vertical-align: middle;
+    }
+}
+

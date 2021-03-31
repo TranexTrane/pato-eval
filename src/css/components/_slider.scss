@@ -1,0 +1,46 @@
+.swiper-container {
+    height: 100vh;
+    margin: auto;
+}
+.swiper-slide img {
+    position: absolute;
+    top:0;
+    width: 100%;
+    height:100%;
+    object-fit: cover;
+}
+
+.info-slide{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 2;
+    text-align: center;
+
+    h1{
+        color: white;
+        font-size: 90px;
+        margin: 20px 0px;
+        letter-spacing: 10px;
+    }
+
+    span {
+        color: white;
+        font-size: 60px;
+    }
+    
+    button{
+        margin-top: 30px;
+        color: red;
+        background: white;
+        border-radius: 10px;
+        padding: 12px 25px;
+        font-size: 12px;
+        transition: all ease-in-out 0.5s;
+        &:hover{
+            background-color: red;
+            color: white;
+        }
+    }
+}   

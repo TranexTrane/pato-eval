@@ -3,26 +3,152 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title></title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+  <title>Home</title>
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Courgette&family=Montserrat&family=Poppins:wght@700&display=swap" rel="stylesheet">
+  
   <link rel="stylesheet" href="css/styles.min.css">
 </head>
 <body>
-  <h1 class="hello">
-    Maman
-  </h1>
-  <p>
-    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt adipisci sapiente nisi sequi, magni molestiae consectetur optio nulla ut accusamus provident laboriosam est debitis. Enim deleniti pariatur sunt unde aliquid.
-    Quisquam accusantium alias cumque ducimus vel aspernatur dolor illo nisi, veniam quae nemo magni qui? Itaque ut beatae, aspernatur laborum soluta delectus quis consequuntur veniam nisi cupiditate, debitis libero tenetur?
-    Ex alias laborum sequi. Nostrum consequatur id ipsam quidem optio, magni, quos quaerat odio accusantium deleniti exercitationem. Corrupti rem et autem, doloremque eveniet animi accusantium, quaerat eum illo distinctio itaque.
-    Sit ullam numquam, omnis saepe, vel odit id tempora doloribus dicta recusandae ex nam delectus, itaque deleniti natus placeat eaque consequatur nobis qui! Non magnam blanditiis tenetur sequi, eius repellat.
-    Beatae, numquam non itaque sed veritatis iste doloremque expedita, debitis commodi aut unde? Ex ratione distinctio sunt adipisci illo, qui eius vel quo natus facilis molestiae omnis illum fugiat cum.
-    Dolorum, illum unde! Officia distinctio eligendi quidem mollitia excepturi veritatis odit dolor suscipit, illum commodi similique soluta, rerum consectetur eum est sunt. Libero perspiciatis vero incidunt molestiae ullam cupiditate accusamus!
-    Odio maiores dolorem nesciunt aperiam earum hic pariatur laudantium? Impedit deserunt sunt alias recusandae cupiditate voluptatum neque repellendus, quos incidunt nemo magnam. Accusantium perspiciatis veritatis, beatae corporis obcaecati quasi dolores?
-    Saepe modi alias facilis tempore voluptatem earum explicabo eum, consequuntur ipsam in voluptatum quod necessitatibus laudantium porro totam aspernatur recusandae atque temporibus dolore vero ex consectetur animi reprehenderit! Iure, corporis?
-    Perferendis beatae culpa laboriosam ipsa, velit non exercitationem hic laudantium necessitatibus dolores! Maxime a perspiciatis, laborum nisi neque ab quo id ea delectus tempora recusandae voluptatum accusantium. Iste, ducimus ad.
-    Ab fugit qui sint id praesentium vel eligendi deleniti ea eaque iusto non neque, nulla molestias alias dignissimos at fugiat pariatur tempora sit modi in. Cumque placeat quam tempore obcaecati.
-  </p>
-   <script src="js/myJs.min.js"></script>
+  <header class="header">
+    <!-- navigation -->
+    
+      <nav class="main-nav">
+        <div class="wrapper">
+        <div class="logo">
+           <a href="index.html">
+             <img src="img/icons/logo.png" alt="Logo du restaurant">
+            </a>
+        </div>
+        <div class="menu">
+          <a href="index.html">Home</a>
+          <a href="#">Menu</a>
+          <a href="#">Reservation</a>
+          <a href="gallery.html">Gallery</a>
+          <a href="#">About</a>
+          <a href="#">Blog</a>
+          <a href="contact.html">Contact</a>
+        </div>
+        <div class="reseau">
+          <a href="#"><i class="fab fa-tripadvisor"></i></a>
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <button class="btn-burger"></button>
+        </div>
+      </div>
+      </nav>
+    
+     <!-- Slider main container -->
+    <div class="swiper-container">
+      <!-- Additional required wrapper -->
+      <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="swiper-slide">  
+          <div class="info-slide">
+            <span>Welcome to</span>          
+            <h1>Pato Place</h1>
+              <button class="button-send">Look Menu</button>
+            </div>
+          <img src="img/master-slides-01.jpg" alt="Petite Salade">
+        </div>
+        <div class="swiper-slide">
+          <div class="info-slide">
+            <span>Welcome to</span>          
+            <h1>Pato Place</h1>
+              <button class="button-send">Look Menu</button>
+            </div>
+          <img src="img/master-slides-02.jpg" alt="Beeeeh fait le mouton">
+        </div>
+        <div class="swiper-slide">
+          <div class="info-slide">
+            <span>Welcome to</span>          
+            <h1>Pato Place</h1>
+              <button class="button-send">Look Menu</button>
+            </div>
+          <img src="img/master-slides-03.jpg" alt="Restaurant">
+        </div>     
+      </div>
+      <!-- If we need pagination -->
+      <div class="swiper-pagination"></div>
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+    </div>
+  </header>
+  <!-- Première section -->
+  <section class="welcome wrapper">
+    <div class="welcome-txt">
+      <span>Italian Restaurant</span>
+      <h2>Welcome</h2>
+      <p>Donec quis lorem nulla. Nunc eu odio mi. Morbi nec lobortis est. Sed fringilla, 
+        nunc sed imperdiet lacinia, nisl ante egestas mi, ac facilisis ligula sem id neque.</p>
+        <a href="#">Our Story -></a>
+    </div>
+    <div class="welcome-img">
+      <img src="img/our-story-01.jpg" alt="">
+    </div>
+  </section>
+  <!-- background parallax -->
+  <div class="pato-place">
+    <span>Discover</span>
+    <h2>Pato Place</h2>
+  </div>
+  <!-- section notre menu -->
+  <section class="our-menu">
+
+  </section>
+  <!-- section slider review -->
+  <section class="review">
+    
+  </section>
+  <!-- background media / lightbox -->
+  <div class="our-video">
+  </div>
+  <!-- section news-->
+  <section class="news">
+    <div class="article">
+      <a href="#"></a><img src="" alt=""></a>
+      <a href="#"><h3>Best Places For Wine</h3></a>
+      <p>Phasellus lorem enim, luctus ut velit eget, con-vallis egestas eros.</p>
+      <a href="#">Continue Reading</a>
+    </div>
+    <div class="article">
+      <a href="#"></a><img src="" alt=""></a>
+      <a href="#"><h3>Best Places For Wine</h3></a>
+      <p>Phasellus lorem enim, luctus ut velit eget, con-vallis egestas eros.</p>
+      <a href="#">Continue Reading</a>
+    </div>
+    <div class="article">
+      <a href="#"></a><img src="" alt=""></a>
+      <a href="#"><h3>Best Places For Wine</h3></a>
+      <p>Phasellus lorem enim, luctus ut velit eget, con-vallis egestas eros.</p>
+      <a href="#">Continue Reading</a>
+    </div>
+  </section>
+  <footer class="footer">
+  <div class="footer-top">
+    <div class="contact-us">
+      <p> 8th floor, 379 Hudson St, New York, NY 10018</p>
+      <p> (+1) 96 716 6879</p>
+      <p>contact@site.com</p>
+    </div>
+    <div class="open-time">
+      <p>09:30 AM – 11:00 PM</p>
+      <p>Every Day</p>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="reseau white">
+      <a href="#"></a>
+      <a href="#"></a>
+      <a href="#"></a>
+    </div>
+    <p>Copyright © 2018 All rights reserved | This template is made with  by <a href="https://colorlib.com/">Colorlib</a> and modified with  by Rhumy</p>
+  </div>
+  </footer>
+  <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+  <script src="https://kit.fontawesome.com/286f454106.js" crossorigin="anonymous"></script>
+  <script src="js/myJs.min.js"></script>
 </body>
 </html>
