@@ -7,8 +7,9 @@
   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Courgette&family=Montserrat&family=Poppins:wght@700&display=swap" rel="stylesheet">
-  
   <link rel="stylesheet" href="css/styles.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+  <script src="js/parallax.min.js"></script>
 </head>
 <body>
   <header class="header">
@@ -18,7 +19,7 @@
         <div class="wrapper">
         <div class="logo">
            <a href="index.html">
-             <img src="img/icons/logo.png" alt="Logo du restaurant">
+             <img class="second" src="img/logo.png" alt="Logo du restaurant">
             </a>
         </div>
         <div class="menu">
@@ -77,26 +78,63 @@
     </div>
   </header>
   <!-- Première section -->
-  <section class="welcome wrapper">
-    <div class="welcome-txt">
-      <span>Italian Restaurant</span>
-      <h2>Welcome</h2>
-      <p>Donec quis lorem nulla. Nunc eu odio mi. Morbi nec lobortis est. Sed fringilla, 
-        nunc sed imperdiet lacinia, nisl ante egestas mi, ac facilisis ligula sem id neque.</p>
-        <a href="#">Our Story -></a>
-    </div>
-    <div class="welcome-img">
-      <img src="img/our-story-01.jpg" alt="">
+  <section class="welcome">
+    <div class="wrapper">
+      <div class="welcome-txt">
+        <span>Italian Restaurant</span>
+        <h2>Welcome</h2>
+        <p>Donec quis lorem nulla. Nunc eu odio mi. Morbi nec lobortis est. Sed <br>
+          fringilla,
+          nunc sed imperdiet lacinia, nisl ante egestas mi, ac facilisis <br> ligula sem id neque.</p>
+          <a href="#">Our Story <i class="fas fa-long-arrow-alt-right"></i></a>
+      </div>
+      <div class="welcome-img">
+        <img src="img/our-story-01.jpg" alt="">
+      </div>
     </div>
   </section>
   <!-- background parallax -->
-  <div class="pato-place">
-    <span>Discover</span>
-    <h2>Pato Place</h2>
-  </div>
-  <!-- section notre menu -->
-  <section class="our-menu">
 
+  <div class="parallax-window" data-parallax="scroll"
+  data-image-src="img/bg-intro-01.jpg">
+    <div class="parallax-txt">
+      <span>Discover</span>
+      <h2 class="white">Pato Place</h2>
+    </div>
+  </div>
+
+  <!-- section notre menu -->
+  <section class="gallery">
+    <span>Discover</span>
+    <h2>Our Menu</h2>
+    <div class="wrapper">
+      <div class="gallery-img">
+      <div class="row1">
+        <div class="one">
+          <div class="img-container">
+            <img src="img/our-menu-01.jpg" alt="">
+          </div>
+          <div class="img-container">
+            <img src="img/our-menu-05.jpg" alt="">
+          </div>
+        </div>
+        <div class="img-container">
+          <img src="img/our-menu-13.jpg" alt="">
+        </div>
+      </div>
+      <div class="row2">
+        <div class="img-container">
+          <img src="img/our-menu-08.jpg" alt="">
+        </div>
+        <div class="img-container">
+          <img src="img/our-menu-10.jpg" alt="">
+        </div>
+        <div class="img-container">
+          <img src="img/our-menu-16.jpg" alt="">
+        </div>
+      </div>
+      </div>
+    </div>
   </section>
   <!-- section slider review -->
   <section class="review">
@@ -146,9 +184,11 @@
     </div>
     <p>Copyright © 2018 All rights reserved | This template is made with  by <a href="https://colorlib.com/">Colorlib</a> and modified with  by Rhumy</p>
   </div>
-  </footer>
+</footer>
+  
   <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
   <script src="https://kit.fontawesome.com/286f454106.js" crossorigin="anonymous"></script>
   <script src="js/myJs.min.js"></script>
+ 
 </body>
 </html>

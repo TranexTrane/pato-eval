@@ -1,18 +1,79 @@
 .welcome{
-    display: flex;
-    justify-content: space-between;
+    padding: 100px 0px;
     width: 100%;
-    background: url(../img/icons/pattern1.png);
+    background: url(../img/pattern1.png);
+    .wrapper{
+        display: flex;
+        justify-content: space-between;
+    }
     .welcome-txt{
+        margin-top: 50px;
         width: 60%;
+        text-align: center;
+        
+        span{
+            font-size: 30px;
+        }
+        a{
+            color: rgb(51, 51, 51);
+            font-size: 14px;
+        }
     }
     .welcome-img{
         width: 40%;
-        
         img{
-            width: 400px;
+            max-width: 400px;
+            
+            border-radius: 10px;
+        }
+    }
+}
+
+.parallax-window {
+    position: relative;
+    min-height: 400px;
+    background: transparent;
+}
+
+.parallax-txt{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    span{
+        font-size: 30px;
+    }
+}
+
+.gallery{
+    position: relative;
+    text-align: center;
+    background: url(../img/pattern2.png);
+    padding: 100px 0px;
+}
+
+.gallery-img{
+    display: flex;
+    position: relative;
+    width: 100%;
+    .row1{
+        width: 693px;
+        max-width: 100%;
+    }
+    .row2{
+        width: 30%;      
+        width: 356px;  
+    }
+    .img-container{
+        overflow: hidden;
+        margin: 5px;
+        img{
             max-width: 100%;
             border-radius: 10px;
         }
+    }
+    .one{
+        display:flex;
     }
 }

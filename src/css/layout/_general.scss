@@ -1,5 +1,6 @@
 .wrapper{
-    max-width: 60%;
+    width: 1200px;
+    max-width: 100%;
     margin: 0 auto;
 }
 
@@ -18,12 +19,29 @@ h1,h2,h3{
     text-transform: uppercase;
 }
 
+h2{
+    font-size: 50px;
+    letter-spacing: 5px;
+    margin-top: 10px;
+}
+
 .white{
-    color: white;
+    color: white!important;
 }
 
 button{
     outline: none!important;
     border: none;
     background: transparent;
+}
+
+span {
+    color: red;
+}
+
+p{
+    font-family: 'Montserrat', sans-serif;
+    color: rgb(51, 51, 51);
+    line-height: 25px;
+    font-size: 15px;
 }
