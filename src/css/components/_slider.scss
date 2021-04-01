@@ -1,4 +1,5 @@
 .swiper-container {
+    position: relative;
     height: 100vh;
     margin: auto;
 }
@@ -24,11 +25,6 @@
         margin: 20px 0px;
         letter-spacing: 10px;
     }
-
-    span {
-        color: white;
-        font-size: 60px;
-    }
     
     button{
         margin-top: 30px;
@@ -44,3 +40,44 @@
         }
     }
 }   
+
+.slider-img{
+
+    img{
+    width: 120px!important;
+    height: 120px!important;
+    top: 50%!important;
+    left:50%;
+    transform: translate(-50%,-50%);
+    border-radius: 100px;
+    border: 4px solid red;
+   }
+}
+.smaller-swiper{
+    height: 85vh!important;
+}
+
+.move-top{
+    top: 25%!important;
+
+}
+.slider-txt{
+    position: absolute;
+    top:70%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    i{
+        color: red;
+    }
+    p{
+        font-size: 18px!important;
+    }
+}
+
+.author {
+    margin-top: 20px;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+}
+

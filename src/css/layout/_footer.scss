@@ -1,0 +1,41 @@
+.footer-top{
+    position: relative;
+    background-color:#222222;
+    padding: 100px 0px;
+    .wrapper{
+        display: flex;
+    }
+    .open-time{
+        margin-left: 5%;
+    }
+    p{
+        color: #999999!important;
+        font-size: 13px!important;
+    }
+    h4{
+        letter-spacing: 2px;
+    }
+}
+
+.footer-bottom{
+    position: relative;
+    background-color:#111111;
+    height: 75px;
+    padding-top: 25px;
+    .wrapper{
+        display: flex;
+        justify-content: space-between;
+    }
+    a{
+        text-transform: none!important;
+    }
+    p{
+        margin: 0;
+        color: #999999!important;
+    }
+    .reseau{
+        a:not(:first-child){
+            margin-left: 20px;
+        }
+    }
+}
