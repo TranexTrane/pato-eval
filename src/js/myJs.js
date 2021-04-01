@@ -1,15 +1,21 @@
 var swiper = new Swiper('.swiper-container', {
+  navigation: {
+    nextEl: '.fa-chevron-right',
+    prevEl: '.fa-chevron-left',
+  },
     pagination: {
       el: '.swiper-pagination',
+      type: 'bullets',
     },
   });
 
-  let navigation = document.querySelector(".main-nav");
-  let burgerMenu = document.querySelector(".btn-burger")
-  let logo       = document.querySelector(".logo")
-  let remove     = document.querySelector("second")
-        let scrollGoal = (window.innerHeight) / 5;
-        let dernierScroll = 0;
+  let navigation    = document.querySelector(".main-nav");
+  let burgerMenu    = document.querySelector(".btn-burger")
+  let logo          = document.querySelector(".logo")
+  let remove        = document.querySelector("second")
+  let scrollGoal    = (window.innerHeight) / 5;
+  let dernierScroll = 0;
+
         window.addEventListener('scroll', function() {
         let alreadyScrolled = window.pageYOffset;
         if(alreadyScrolled > scrollGoal) {
@@ -24,3 +30,32 @@ var swiper = new Swiper('.swiper-container', {
         // }
         dernierScroll = alreadyScrolled;
         });
+
+
+        $('.url-video').magnificPopup({
+          type: 'iframe',
+          
+          
+          iframe: {
+             markup: '<div class="mfp-iframe-scaler">'+
+                        '<div class="mfp-close"></div>'+
+                        '<iframe class="mfp-iframe" frameborder="0" allowfullscreen></iframe>'+
+                        '<div class="mfp-title">Some caption</div>'+
+                      '</div>'
+          },
+          callbacks: {
+            markupParse: function(template, values, item) {
+             values.title = item.el.attr('title');
+            }
+          }
+        });
+
+
+        let burger = document.querySelector(".burger-menu");
+        let nav = document.querySelector(".menu");
+
+        burger.addEventListener('click', function() {
+            for (var e = 0; e < divBurger.length; e++)
+            divBurger[e].classList.toggle("active2")
+            nav.classList.toggle("active");
+});

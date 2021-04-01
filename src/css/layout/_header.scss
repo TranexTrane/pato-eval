@@ -86,3 +86,30 @@ height: 100vh;
     border-bottom: 2px solid black!important;
 }
 
+.burger-menu{
+    position:absolute;
+    display: flex;
+    flex-direction: column;
+    padding-top: 100px;
+    height: 100vh;
+    top: 0;
+    width: 300px;
+    background-color: white;
+    z-index: 5;
+    text-align: center;
+    right: 0px;
+    a{
+        margin-top: 20px;
+        color: black;
+    }
+    .reservation{
+        margin-top: 30px;
+        a{
+            font-size: 12px;
+            padding: 15px 25px;
+            border-radius: 10px;
+            background-color: black;
+        }
+    }
+
+}
