@@ -1,9 +1,21 @@
 .header{
 height: 100vh;
 }
+
 .smaller-header{
-    height: 50vh;
-    background: url(./img/master-slides-06.jpg);
+    position: relative;
+    height: 50vh!important;
+    background: url("../img/bg-title-page-02.jpg")center/cover;
+    .header-txt{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        h1{
+            font-size: 50px;
+            letter-spacing: 4px;
+        }
+    }
 }
 
 .main-nav{

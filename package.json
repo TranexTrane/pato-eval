@@ -23,6 +23,7 @@
   },
   "dependencies": {
     "gulp-rename": "^2.0.0",
+    "isotope-layout": "^3.0.6",
     "jquery": "^3.6.0",
     "lightbox2": "^2.11.3"
   }
