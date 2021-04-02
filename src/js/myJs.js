@@ -63,3 +63,9 @@ var swiper = new Swiper('.swiper-container', {
       close.addEventListener('click', function() {
         burger.classList.remove("active");
   });
+
+  $('.grid').isotope({
+    // options
+    itemSelector: '.grid-item',
+    layoutMode: 'fitRows'
+  });
