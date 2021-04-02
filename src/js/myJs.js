@@ -9,10 +9,11 @@ var swiper = new Swiper('.swiper-container', {
     },
   });
 
+// nav bar
+
   let navigation    = document.querySelector(".main-nav");
   let burgerMenu    = document.querySelector(".btn-burger")
-  let logo          = document.querySelector(".logo")
-  let remove        = document.querySelector("second")
+  
   let scrollGoal    = (window.innerHeight) / 5;
   let dernierScroll = 0;
 
@@ -21,9 +22,11 @@ var swiper = new Swiper('.swiper-container', {
         if(alreadyScrolled > scrollGoal) {
             navigation.classList.add("hide");
             burgerMenu.classList.add("burger-color");
+            
         } else {
             navigation.classList.remove("hide");
             burgerMenu.classList.remove("burger-color");
+            
         }
         // if (alreadyScrolled < dernierScroll) {
         //     navigation.classList.remove("hide");
@@ -31,7 +34,7 @@ var swiper = new Swiper('.swiper-container', {
         dernierScroll = alreadyScrolled;
         });
 
-
+// lightbox
         $('.url-video').magnificPopup({
           type: 'iframe',
           
@@ -50,21 +53,21 @@ var swiper = new Swiper('.swiper-container', {
           }
         });
 
-
-       
-        let burger = document.querySelector(".burger-menu");
-        let btnBurger = document.querySelector(".btn-burger")
-        
+        let burger     = document.querySelector(".burger-menu");
+        let btnBurger  = document.querySelector(".btn-burger")
+        let fullPage   = document.querySelector(".full-page")
         btnBurger.addEventListener('click', function() {
             burger.classList.add("active");
+            fullPage.classList.add("active2")
+
 });
       let close = document.querySelector('.close')
-
       close.addEventListener('click', function() {
         burger.classList.remove("active");
+        fullPage.classList.remove("active2")
   });
 
-  // external js: isotope.pkgd.js
+ // external js: isotope.pkgd.js
 
 // init Isotope
 var $grid = $('.grid').isotope({
@@ -100,4 +103,21 @@ $('.button-group').each( function( i, buttonGroup ) {
   });
 });
 
+let myButton = document.getElementById(".back-to-top");
 
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    myButton.style.display = "block";
+  } else {
+    myButton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0; // For Safari
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}

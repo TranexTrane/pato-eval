@@ -21,7 +21,7 @@ height: 100vh;
 .main-nav{
     position: fixed;
     width: 100%;
-    z-index: 50;
+    z-index:60;
     padding-top: 50px;
     border-top: 5px solid red;
     .wrapper{
@@ -116,7 +116,7 @@ height: 100vh;
     right: 0px;
     transform: translateX(100%);
     transition: all ease-in-out 0.4s;
-    z-index: 50;
+    z-index: 100;
     a{
         margin-top: 20px;
         color: black;
@@ -133,7 +133,7 @@ height: 100vh;
 }
 .active {
     transform:translateX(0);
-  }
+}
 
 .close{
     position: absolute;
@@ -143,3 +143,43 @@ height: 100vh;
     font-weight: bold;
     font-size: 20px;
 }
+
+.full-page{
+ width: 100%;
+ position: fixed;
+ height: 100%;
+ background-color: rgba(0, 0, 0, 0.774);
+ z-index: 5;
+ opacity: 0;
+}
+
+.active2{
+    opacity: 1!important;
+}
+
+
+    @media screen and (max-width:1200px) {
+        .logo{
+            left: -50px;
+        }
+        .reseau {
+            position: relative;
+            right: -50px;
+        }
+}
+
+@media screen and (max-width:765px) {
+    
+    .logo{
+        left: 0px;
+    }
+    .reseau {
+        position: relative;
+        right:150px;
+    }
+    .menu{
+        opacity:0;
+    
+}
+}
+        
