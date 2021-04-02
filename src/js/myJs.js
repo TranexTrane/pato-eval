@@ -51,11 +51,15 @@ var swiper = new Swiper('.swiper-container', {
         });
 
 
+       
         let burger = document.querySelector(".burger-menu");
-        let nav = document.querySelector(".menu");
-
-        burger.addEventListener('click', function() {
-            for (var e = 0; e < divBurger.length; e++)
-            divBurger[e].classList.toggle("active2")
-            nav.classList.toggle("active");
+        let btnBurger = document.querySelector(".btn-burger")
+        
+        btnBurger.addEventListener('click', function() {
+            burger.classList.add("active");
 });
+      let close = document.querySelector('.close')
+
+      close.addEventListener('click', function() {
+        burger.classList.remove("active");
+  });
